@@ -10,7 +10,6 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-    max-width: 1400px;
     margin: 0 auto;
     justify-content: center;
 }
@@ -93,26 +92,11 @@ header {
 }
 
 .banner-section {
-
     display: flex;
     justify-content: space-between;
-
     margin-top: 50px;
     align-items: center;
 }
-
-
-.banner-headding {
-    width: 50%;
-    height: 50%;
-
-}
-
-.banner-image img {
-    width: 100%;
-    height: 100%;
-}
-
 
 
 .banner-headding h3 {
@@ -171,21 +155,29 @@ header {
 
 /* We are game section */
 .game-section {
-    max-width: 1400px;
-    display: flex;
-    justify-content: space-between;
+    /* max-width: 1400px; */
     margin: 0 auto;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
     align-items: center;
 }
 
-image-game-extra img {
-    margin-left: 20px;
-    display: hide;
+.image-game-extra {
+    border: solid red 2px;
+
+}
+
+.image-game-width {
+    width: 80%;
+    height: 100%;
+
+
 }
 
 .game-extra-section {
-
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+   
 
 }
 
@@ -244,8 +236,9 @@ image-game-extra img {
 
 /* Online Games Funny Videos */
 .game-funny-videos {
-    max-width: 1400px;
-    margin: 0 auto;
+    /* max-width: 1400px; */
+    width: 80%;
+    margin: auto;
     margin-top: 150px;
 }
 
@@ -293,8 +286,9 @@ image-game-extra img {
 
 /* Play Instantly No Downloads No Installs */
 .play-instantly-downloads {
-    max-width: 1400px;
-    margin: 0 auto;
+    /* max-width: 1400px; */
+    width: 80%;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -365,6 +359,8 @@ image-game-extra img {
 }
 
 .circle-img-container {
+    width: 80%;
+    margin: auto;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
     display: flex;
     flex-wrap: wrap;
@@ -462,17 +458,19 @@ image-game-extra img {
 /* Mobile responsive */
 @media screen and (max-width: 576px) {
     * {
+        margin: auto;
         padding: 0;
-        
-        margin: 0 auto;
     }
-
+.circle-img-container{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+}
     .nav-saction,
     .about-us {
         flex-direction: column;
     }
 
-    .banner-headding,
+
     .image-game-extra,
     .text-game-extra,
     .banner-image,
@@ -483,7 +481,12 @@ image-game-extra img {
         justify-content: center;
 
     }
-    .play-image{
+
+    .image-game-width {
+        width: 100%;
+    }
+
+    .play-image {
         margin: 0;
     }
 
@@ -519,6 +522,9 @@ image-game-extra img {
 
     .about-us {
         margin-top: 50px;
+    }
+    .footer{
+        width: 100%;
     }
 }
 
