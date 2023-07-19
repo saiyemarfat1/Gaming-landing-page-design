@@ -1,0 +1,45 @@
+/* Work sans styels with google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@200;300;400;600;700;800;900&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.banner-section{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+.banner-text{
+    background-image: url("./images/Group\ 14\ test.png");
+    border: 1px solid red;
+    width: 50%;
+    background-color: rebeccapurple;
+}
+.banner-image{
+    border: 1px solid blue;
+    width: 50%;
+}
+/* Game  */
+@media screen and (max-width: 576px) {
+    .banner-section{
+        flex-direction: column-reverse;
+    
+    }
+    .banner-text{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        margin-left: 120px;
+    }
+    
+}
