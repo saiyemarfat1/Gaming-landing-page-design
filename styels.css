@@ -463,9 +463,8 @@ image-game-extra img {
 @media screen and (max-width: 576px) {
     * {
         padding: 0;
-        max-width: 576px;
-        justify-content: center;
-        margin: 0;
+        
+        margin: 0 auto;
     }
 
     .nav-saction,
@@ -484,7 +483,9 @@ image-game-extra img {
         justify-content: center;
 
     }
-
+    .play-image{
+        margin: 0;
+    }
 
     .play-headding {
         right: 0;
@@ -494,7 +495,6 @@ image-game-extra img {
     .text-game-extra {
         text-align: center;
     }
-
 
     .banner-section,
     .game-section {
