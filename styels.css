@@ -390,8 +390,39 @@ nav a {
 
 
 }
+/* hover */
+.circle-description:hover{
+  
+    color: #FF42A5; 
+}
+.tyep-of-img:hover{
+    border: 1px solid #F948B2;
+    
+    
+   
+}
 
+/* Games funny hover */
+/* .games-funny-card-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+} */
 
+.games-funny-hover{
+        position: relative;
+        bottom: 300px;
+        left: 150px;
+        opacity: 0;
+        transition: 0,4;
+        
+    }
+
+.games-funny-hover:hover{
+    opacity: 2;
+   
+}
 
 /* footer section ended */
 
@@ -604,6 +635,7 @@ nav a {
         padding: 0;
         margin-top: 80px;
         margin-bottom: 0;
+        padding-bottom: 0;
         
     }
 
