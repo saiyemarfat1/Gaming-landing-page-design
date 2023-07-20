@@ -10,8 +10,6 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-    margin: 0 auto;
-    justify-content: center;
 }
 
 .nav-saction {
@@ -20,6 +18,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 15px;
+    padding: 0 230px;
 }
 
 .logo-section {
@@ -80,214 +79,131 @@ nav a {
     color: red;
 }
 
-/* banner section started */
-.banner {
-    background-image: url("/images/Group\ 14.png");
-    background-repeat: no-repeat;
-}
-
-header {
-    /* max-width: 1400px; */
-    margin: 0 auto;
-}
-
-.banner-section {
+/* banner-container started */
+.banner-container {
     display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    align-items: center;
+    height: 600px;
 }
 
+.banner-text {
+    width: 50%;
+    background-image: url("./images/Group\ 14.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 230px;
+}
 
-.banner-headding h3 {
+.banner-text h3 {
     color: #0B0223;
     font-size: 48px;
     font-weight: 600;
     text-transform: uppercase;
 }
 
-.banner-headding h1 {
+.banner-text h1 {
     font-size: 6rem;
     font-weight: 800;
-    text-transform: uppercase;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
+    margin-bottom: 10px;
 }
 
-.banner-p {
+.banner-text p {
     color: #534C64;
     font-size: 1.25rem;
     font-weight: 500;
-    margin-top: 17px;
+    line-height: 30px;
+
+}
+
+.btn {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
 }
 
 .btn-sign {
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    padding: 21px 40px;
+    gap: 10px;
+    border: none;
     color: #FFF;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
     text-transform: uppercase;
-    border: none;
-    margin-top: 40px;
-    border-radius: 48px;
-    padding: 20px 40px;
-    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
-    margin-right: 24px;
 }
 
 .btn-go {
+    border-radius: 48px;
+    background-color: #4EC5F7;
+    padding: 21px 40px;
+    gap: 10px;
+    border: none;
     color: #FFF;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
     text-transform: uppercase;
-    border: none;
-    margin-top: 40px;
-    border-radius: 48px;
-    padding: 20px 40px;
-    background: #4EC5F7;
 }
 
-.banner-pi {
-    color: #E861B8;
+.image-container {
+    margin-left: 120px;
 }
 
-/* We are game section */
-.game-section {
-    /* max-width: 1400px; */
-    margin: 0 auto;
-    display: flex;
-    width: 80%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.image-game-extra {
-    border: solid red 2px;
-
-}
-
-.image-game-width {
-    width: 80%;
+.banner-img {
+    width: 100%;
     height: 100%;
-
-
 }
 
-.game-extra-section {
-    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
-   
-
-}
-
-.text-game-extra {
-    text-align: right;
-    width: 50%;
-    height: auto;
-}
-
-.image-game-extra {
-    width: 50%;
-
-}
-
-
-.text-game-extra h1 {
-
-    font-size: 3rem;
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.text-game-extra p {
-    color: #534C64;
-    font-size: 1.1rem;
-    font-weight: 400;
-    line-height: 30px;
-
-}
-
-.btn-game {
-    color: #FFF;
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: uppercase;
-    border: none;
-    margin-top: 40px;
-    border-radius: 48px;
-    padding: 20px 40px;
-    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
-
-}
-
-.btn-unleash {
-    color: #534C64;
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 45px;
-}
-
-.text-game-last {
-    margin-top: 24px;
-}
-
-/* Online Games Funny Videos */
-.game-funny-videos {
-    /* max-width: 1400px; */
-    width: 80%;
-    margin: auto;
-    margin-top: 150px;
-}
-
-.game-funny-img-section {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-}
-
-.game-funny-heading-p,
-.game-funny-heading {
-    text-align: center;
-    margin-top: 16px;
-}
-
-.game-funny-heading {
+/* Games funny videos */
+.games-title {
     color: #0B0223;
     font-size: 3rem;
     font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+
 }
 
-.game-funny-heading-videos {
+.games-title-funny {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
 }
 
-.game-funny-heading-p {
+.games-pragraph {
     color: #534C64;
-    font-size: 18px;
-    font-style: normal;
+    text-align: center;
+    font-size: 1.125rem;
     font-weight: 400;
-    line-height: 30px;
+    margin-top: 15px;
+
 }
 
-.game-funny-heading-pn {
+.games-funny-card p {
     color: #534C64;
     font-size: 1.25rem;
     font-weight: 500;
     line-height: 30px;
-    margin-top: 24px;
+    margin-top: 20px;
+}
+
+.games-funny-main {
+    display: flex;
+    margin: 50px 230px;
+    justify-content: space-between;
 
 }
 
 /* Play Instantly No Downloads No Installs */
 .play-instantly-downloads {
     /* max-width: 1400px; */
-    width: 80%;
+    height: 600px;
+    padding: 20px 230px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -298,9 +214,7 @@ header {
 .play-headding {
     width: 50%;
     text-align: right;
-    position: relative;
-    right: 100px;
-    bottom: 100px;
+
 
 }
 
@@ -311,8 +225,12 @@ header {
 }
 
 .play-image {
-    height: 50%;
+    height: 100%;
     margin-left: 50px;
+}
+
+.play-big-img {
+    height: 100%;
 }
 
 .play-headding-text-play {
@@ -332,20 +250,19 @@ header {
 
 }
 
+.small-img {
+    width: 50%;
+}
+
 .position-play-image {
     position: relative;
     bottom: 250px;
     right: 100px;
 }
 
-.position-play-image-female {
-    position: relative;
-    bottom: 250px;
-    left: 500px;
-}
 
+/* circle image-containe */
 
-/* Type of games */
 .tyep-of-img {
     display: flex;
     align-items: center;
@@ -358,12 +275,16 @@ header {
 
 }
 
-.circle-img-container {
-    width: 80%;
-    margin: auto;
+.circle-bg {
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    margin-top: 100px;
+    padding: 20px 230px;
+}
+
+.circle-img-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 10px 20px;
 
 }
@@ -375,21 +296,24 @@ header {
 
 }
 
+
 /* footer-section */
 
 
 .footer {
     align-items: center;
     margin-top: 50px;
+    justify-content: center;
 }
 
 .logo-footer {
+    justify-content: center;
     display: flex;
     color: white;
 
 }
 
-.anchor-text-new {
+.anchor-text-f {
     margin-top: 20px;
     color: #FFF;
     text-align: center;
@@ -397,10 +321,6 @@ header {
     font-weight: 600;
 }
 
-.anchor-text-f {
-    text-align: center;
-    text-decoration: none;
-}
 
 .anchor-text-f a {
     text-decoration: none;
@@ -408,9 +328,24 @@ header {
     padding-left: 20px;
 }
 
+.anchor-text-trems a {
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+}
+
+.anchor-text-trems {
+    margin-top: 20px;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
 .social-media-icon-footer {
     display: flex;
-    width: 30%;
+    text-align: center;
+    justify-content: center;
     font-size: 1.8rem;
     margin-top: 30px;
 }
@@ -438,8 +373,9 @@ header {
 .footer-section {
     background-color: #0B0223;
     color: white;
-    height: 449px;
-    margin-top: 100px;
+    /* height: 449px; */
+    width: 100%;
+    padding-bottom: 150px;
     text-align: center;
     align-items: center;
 
@@ -452,96 +388,226 @@ header {
 .footer-section-text {
     padding-top: 150px;
 
+
 }
 
 
-/* Mobile responsive */
+
+/* footer section ended */
+
+
+
+
+
+
+
+/* mobile responsive */
+/* nav section */
 @media screen and (max-width: 576px) {
-    * {
-        margin: auto;
-        padding: 0;
-    }
-.circle-img-container{
-    display: grid;
-    grid-template-columns: repeat(3, 2fr);
-}
+
+    .play-instantly-downloads,
+    .games-funny-main,
     .nav-saction,
     .about-us {
         flex-direction: column;
-    }
 
-
-    .image-game-extra,
-    .text-game-extra,
-    .banner-image,
-    .play-headding,
-    .play-image {
-        width: 100%;
-        justify-items: center;
-        justify-content: center;
-
-    }
-
-    .image-game-width {
-        width: 100%;
     }
 
     .play-image {
-        margin: 0;
+        margin-top: 5px;
+    }
+
+    .position-play-image {
+        position: relative;
+        bottom: 100px;
+        right: 70px;
+    }
+
+    .play-image img {
+        height: 50%;
+    }
+
+    .small-img {
+        height: 100%;
+    }
+
+    .play-headding-text {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 35px;
+    }
+
+    .play-instantly-downloads {
+        padding: 0;
     }
 
     .play-headding {
-        right: 0;
-        bottom: 0;
-    }
-
-    .text-game-extra {
+        width: 100%;
         text-align: center;
     }
 
-    .banner-section,
-    .game-section {
-        flex-direction: column-reverse;
+    .play-headding-text-p {
+        color: #534C64;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 25px;
+        margin-top: 24px;
+    }
 
+    .circle-img-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .circle-bg {
+        padding: 20px;
+    }
+
+    .circle-bg img {
+        width: 35%;
+    }
+
+    .circle-img-container {
+        gap: 10px;
+    }
+
+
+    .circle-description {
+        color: #0B0223;
+        font-size: 0.6rem;
+        font-weight: 600;
 
     }
 
-    .game-section {
-        flex-direction: column-reverse;
+
+    .games-funny-main {
+        margin: 0;
     }
 
-    .game-funny-img-section,
-    .play-instantly-downloads {
-        flex-direction: column;
+    .logo-section {
+        text-align: center;
+    }
+
+    .games-funny-card {
+        margin: 10px auto;
+    }
+
+    .games-title {
+        font-size: 1.5rem;
+    }
+
+    .games-pragraph {
+        font-size: 0.7rem;
+        margin-bottom: 15px;
+    }
+
+    .games-funny-card p {
+        font-size: 1rem;
+        line-height: 20px;
+        margin-top: 0px;
     }
 
     .nav-saction {
-        margin-top: 50px;
-        width: 800px;
+
+        padding: 0px;
+    }
+
+    /* banner-section */
+    .banner-container {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .banner-text {
+        width: 100%;
+        padding: 30px;
+
+    }
+
+    .image-container {
+        margin-left: 0;
+
     }
 
     .about-us {
-        margin-top: 50px;
+        margin-top: 30px;
     }
-    .footer{
-        width: 100%;
+
+    /* footer-text */
+    .anchor-text-f {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        font-size: 0.7rem;
     }
+
+    .anchor-text-f a {
+        line-height: 30px;
+    }
+    .anchor-text-trems{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 0.7rem;
+    }
+
+    .anchor-text-trems a {
+        line-height: 30px;
+    }
+
+
+    .footer-last-text {
+        margin-top: 40px;
+        color: rgba(255, 255, 255, 0.60);
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
+
+
 }
 
+/* tablate responsive */
+@media screen and (min-width: 577px) and (max-width: 992px) {
 
-/* Medium Device reponsive */
-@media screen and (min-width: 576px) and (max-width: 992px) {
+    /* tablate nav  */
     .nav-saction {
         flex-direction: column;
-        align-items: center;
+        padding: 20px;
     }
 
-    .nav-saction {
-        margin-top: 50px;
-        width: 800px;
+    .games-funny-main {
+        /* flex-direction: column; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px;
+    }
+
+    .games-funny-card p {
+        font-size: 1rem;
+        line-height: 20px;
+        margin-bottom: 10px;
     }
 
     .about-us {
-        margin-top: 50px;
+        margin-top: 30px;
     }
+
+    /* banner-section */
+    .banner-container {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .banner-text {
+        width: 100%;
+        padding: 70px;
+
+    }
+
+    .image-container {
+        margin-left: 0;
+
+    }
+
+
 }
