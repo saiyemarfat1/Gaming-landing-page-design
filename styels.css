@@ -405,6 +405,10 @@ nav a {
 /* nav section */
 @media screen and (max-width: 576px) {
 
+    /* logo section */
+   
+
+    /* logo section end */
     .play-instantly-downloads,
     .games-funny-main,
     .nav-saction,
@@ -454,11 +458,6 @@ nav a {
         margin-top: 24px;
     }
 
-    .circle-img-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
     .circle-bg {
         padding: 20px;
     }
@@ -468,6 +467,8 @@ nav a {
     }
 
     .circle-img-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         gap: 10px;
     }
 
@@ -543,7 +544,8 @@ nav a {
     .anchor-text-f a {
         line-height: 30px;
     }
-    .anchor-text-trems{
+
+    .anchor-text-trems {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         font-size: 0.7rem;
@@ -554,15 +556,20 @@ nav a {
     }
 
 
-    .footer-last-text {
-        margin-top: 40px;
-        color: rgba(255, 255, 255, 0.60);
-        text-align: center;
-        font-size: 1rem;
-        font-weight: 500;
+    /* social medial link */
+    .social-media-icon {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        font-size: 1.5rem;
+        gap: 25px 35px;
     }
-    
 
+    .footer-last-text {
+        justify-content: center;
+        width: 60%;
+        font-size: 0.8rem;
+        margin-left: 80px;
+    }
 
 }
 
